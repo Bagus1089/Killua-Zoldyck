@@ -1,4 +1,5 @@
 require("./global")
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
 const { generateWAMessage, areJidsSameUser, proto } = require("@adiwajshing/baileys")
 const { Simple, Collection, Function } = require("./lib")
 const { isUrl, isNumber } = Function
